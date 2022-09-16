@@ -1,0 +1,85 @@
+@import url(//db.onlinewebfonts.com/c/ce4b0ee545ec52c2ec8cec62d23ffb09?family=Calculator);
+@font-face {
+  font-family: "Calculator";
+  src: url("//db.onlinewebfonts.com/t/ce4b0ee545ec52c2ec8cec62d23ffb09.eot");
+  src: url("//db.onlinewebfonts.com/t/ce4b0ee545ec52c2ec8cec62d23ffb09.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/ce4b0ee545ec52c2ec8cec62d23ffb09.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/ce4b0ee545ec52c2ec8cec62d23ffb09.woff") format("woff"), url("//db.onlinewebfonts.com/t/ce4b0ee545ec52c2ec8cec62d23ffb09.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/ce4b0ee545ec52c2ec8cec62d23ffb09.svg#Calculator") format("svg");
+}
+audio {
+  display: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: white;
+  color: black;
+  background-color: #66CDAA;
+}
+
+#wrapper {
+  background-color: #fff;
+  border: 1px solid red;
+  font-family: Calculator;
+  width: 700px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #202020;
+  font-size: 2rem;
+}
+@media (max-width: 600px) {
+  #wrapper {
+    width: 90vw;
+    height: 400px;
+    font-size: 1rem;
+  }
+}
+#wrapper #App {
+  background-color: black;
+  width: 80%;
+  height: 80%;
+  text-align: center;
+  justify-content: center;
+  color: #00FA9A;
+}
+#wrapper #App #tools {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px;
+}
+@media (max-width: 600px) {
+  #wrapper #App #tools {
+    margin: 10px;
+  }
+}
+#wrapper #App #tools2 {
+  margin: auto;
+  font-size: 3rem;
+}
+#wrapper #App #tools2 button {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 10px;
+  font-size: 1rem;
+}
+@media (max-width: 600px) {
+  #wrapper #App #tools2 {
+    font-size: 2rem;
+    padding-bottom: 60px;
+  }
+}
+
+button {
+  color: #00FA9A;
+  background-color: black;
+}/*# sourceMappingURL=style.css.map */
