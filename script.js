@@ -6,16 +6,13 @@ function App(){
  const [minute,setMinute] = React.useState(25)
  const [sstext,setSStext] = React.useState("start");
  const [timerSession,setTimerSession] = React.useState(true);
- let playE = function(){
-    document.getElementById("E").play();
-}
+
 
    function Decrement(BS){
     return () => {
         if(BS === "break" && play == false) {
             if(breakLength>1){
                 setbreakLength(breakLength-1);
-                playE();
                 if(timerSession == false){
                     setMinute(breakLength-1);
                     setSecond(0);
@@ -177,4 +174,6 @@ return(
         </div>
     )
 }
-ReactDOM.render(<App />, document.querySelector("#Load"))
+const container = document.getElementById("Load");
+const root = createRoot(container);
+root.render(<App />)
