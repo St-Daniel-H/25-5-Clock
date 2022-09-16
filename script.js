@@ -1,4 +1,3 @@
-
 function App(){
  const [breakLength,setbreakLength] = React.useState(5);
  const [sessionLength,setsessionLength] = React.useState(25);
@@ -143,25 +142,25 @@ function App(){
   
   
    
-    return(
+return(
    <div id="wrapper">
       <div id="App">
         <div id="tools">
             <div id="break">
                <div id="break-label"><h3>Break Length</h3></div>
-               <button  onClick={Increment("break")} id="break-increment"><i class="fa-solid fa-arrow-up"></i></button>
+               <button  onClick={Increment("break")} id="break-increment"><i className="fa-solid fa-arrow-up"></i></button>
                <div id="break-length">{breakLength}</div>
                <button onClick={Decrement("break")}id="break-decrement">
-                <i class="fa-sharp fa-solid fa-arrow-down-long"></i>
+                <i className="fa-sharp fa-solid fa-arrow-down-long"></i>
                 </button>
                
               
             </div>
             <div id="session">
                <div id="session-label"><h3>Session Length</h3></div>
-               <button onClick={Increment("session")} id="session-increment"><i class="fa-solid fa-arrow-up"></i></button>
+               <button onClick={Increment("session")} id="session-increment"><i className="fa-solid fa-arrow-up"></i></button>
                <div id="session-length">{sessionLength}</div>
-               <button onClick={Decrement("session")} id="session-decrement"><i class="fa-sharp fa-solid fa-arrow-down-long"></i></button>
+               <button onClick={Decrement("session")} id="session-decrement"><i className="fa-sharp fa-solid fa-arrow-down-long"></i></button>
               
                
             </div>
@@ -172,7 +171,7 @@ function App(){
               <div id="time-left">{show(minute)}:{show(second)}</div>
             </div>
             <button onClick={start}id="start_stop">{sstext}</button>
-            <button id="reset" onClick={reset}><i class="fa-solid fa-repeat"></i></button>
+            <button id="reset" onClick={reset}><i className="fa-solid fa-repeat"></i></button>
             </div>
             </div>
         </div>
