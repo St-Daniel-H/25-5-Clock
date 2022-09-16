@@ -174,4 +174,5 @@ return(
         </div>
     )
 }
-ReactDOM.render(<App />, document.querySelector("#Load"))
+const root = ReactDOM.createRoot(document.getElementById("Load"));
+      root.render(<App/>);
